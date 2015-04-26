@@ -1,0 +1,62 @@
+.fade-in-from-top {
+	opacity: 0;
+	transform: translateY(-6px);
+	animation: fadeInVert 0.5s ease-out forwards;
+	-webkit-animation: fadeInVert 0.5s ease-out forwards;
+}
+
+.fade-in-from-bottom {
+	opacity: 0;
+	transform: translateY(6px);
+	animation: fadeInVert 0.5s ease-out forwards;
+	-webkit-animation: fadeInVert 0.5s ease-out forwards;
+}
+
+@keyframes fadeInVert {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes fadeInVert {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-in-from-left {
+	opacity: 0;
+	transform: translateX(-6px);
+	animation: fadeInHoriz 0.5s ease-out forwards;
+	-webkit-animation: fadeInHoriz 0.5s ease-out forwards;
+}
+
+.fade-in-from-right {
+	opacity: 0;
+	transform: translateX(6px);
+	animation: fadeInHoriz 0.5s ease-out forwards;
+	-webkit-animation: fadeInHoriz 0.5s ease-out forwards;
+}
+
+@keyframes fadeInHoriz {
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes fadeInHoriz {
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@for $i from 1 through 10 {
+	.anim-delay-#{$i*5} {
+		animation-delay: #{$i*500}ms;
+		-webkit-animation-delay: #{$i*500}ms;
+	}
+}

@@ -1,0 +1,70 @@
+@import './_imports/_variables';
+@import './_imports/_colors';
+
+input[id^="modal-"] {
+	display: none;
+	&:checked {
+		+ label {
+			outline: none;
+			background-size: 1000%;
+	    	transition: all 1s $cubic;
+			&:before {
+					content: '';
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,0.4);
+					transition: all 0.3s $cubic;
+					z-index: 3;
+				}
+			}
+		~ .modal-content {
+			transition: opacity 0.3s $cubic;
+			opacity: 1;
+			display: block;
+			height: auto;
+			width: auto;
+			padding: $space-big;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 4;
+			* {
+				height: auto;
+				width: auto;
+			}
+		}
+	}
+}
+
+.modal-trigger {
+	cursor: pointer;
+	@extend .btn--raised;
+	transition: all 0.3s $cubic;
+	padding: $space-small $space-med;
+	background-size: 1%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	&:after {
+		white-space: nowrap;
+		padding: $space-small;
+		cursor: pointer;
+		transition: all 0.2s $cubic;
+		@extend .btn--raised;
+		background-image: none;
+	}
+}
+
+.modal-content {
+	position: fixed;
+	opacity: 0;
+	height: 0;
+	background: white;
+	border-radius: $border-radius-small;
+	* {
+		width: 0;
+		height: 0;
+	}
+}

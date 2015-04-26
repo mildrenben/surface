@@ -1,0 +1,78 @@
+.nav--horizontal {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .nav--horizontal ul, .nav--horizontal ol {
+    margin-left: 0; }
+  .nav--horizontal > ul, .nav--horizontal > li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .nav--horizontal a {
+    display: inline-block; }
+  .nav--horizontal li {
+    /* 		&:first-child a {
+			margin-right: $space-small*0.7;
+		}
+		&:last-child a {
+			margin-left: $space-small*0.7;
+		}
+		a {
+			margin-left: $space-small*0.7;
+			margin-right: $space-small*0.7;
+		} */ }
+
+.nav--vertical ul, .nav--vertical ol {
+  margin-left: 0; }
+.nav--vertical ul, .nav--vertical li, .nav--vertical a {
+  display: inline-block;
+  float: left;
+  clear: left; }
+.nav--vertical li:first-child a {
+  margin-bottom: 7px; }
+.nav--vertical li:last-child a {
+  margin-top: 7px; }
+.nav--vertical li a {
+  margin-top: 7px;
+  margin-bottom: 7px; }
+
+header .nav--vertical a, header .nav--horizontal a {
+  color: #1abc9c;
+  background: white;
+  padding: 10px;
+  transition: none; }
+  header .nav--vertical a:hover, header .nav--horizontal a:hover {
+    background: #e5e5e5; }
+
+.dropdown {
+  position: relative; }
+  .dropdown ul {
+    position: absolute;
+    background: white;
+    left: 0;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    z-index: 2;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.09);
+    width: 100%; }
+    .dropdown ul li {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      .dropdown ul li:first-child a {
+        border-radius: 3px 3px 0 0; }
+      .dropdown ul li:last-child a {
+        border-radius: 0 0 3px 3px;
+        margin-left: 0; }
+      .dropdown ul li a {
+        width: 100%;
+        padding: 8px 10px;
+        display: inline-block;
+        margin: 0;
+        border-radius: 0; }
+  .dropdown:hover ul {
+    -webkit-transform: scale(1);
+            transform: scale(1); }

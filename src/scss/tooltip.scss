@@ -1,0 +1,19 @@
+@import './_imports/_variables';
+@import './_imports/_colors';
+
+.tooltip {
+	position: relative;
+	&:hover {
+		&:after {
+			position: absolute;
+			content: attr(data-text);
+			background: $grey;
+			border-radius: $border-radius-small;
+			padding: $space-small*0.8;
+			bottom: -2em;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 2;
+		}
+	}
+}

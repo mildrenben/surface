@@ -1,0 +1,19 @@
+table {
+  width: 100%; }
+
+.table--header {
+  color: #474747;
+  font-size: 16px;
+  line-height: 52px; }
+
+tr {
+  font-size: 17px;
+  line-height: 52px;
+  border-bottom: solid 1px #ebebeb; }
+  tr:not(.table--header):hover {
+    background: #ebebeb; }
+
+td:first-child {
+  padding-left: 40px; }
+td:last-child {
+  padding-right: 40px; }

@@ -1,0 +1,91 @@
+.fade-in-from-top {
+  opacity: 0;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  animation: fadeInVert 0.5s ease-out forwards;
+  -webkit-animation: fadeInVert 0.5s ease-out forwards; }
+
+.fade-in-from-bottom {
+  opacity: 0;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  animation: fadeInVert 0.5s ease-out forwards;
+  -webkit-animation: fadeInVert 0.5s ease-out forwards; }
+
+@keyframes fadeInVert {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes fadeInVert {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.fade-in-from-left {
+  opacity: 0;
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
+  animation: fadeInHoriz 0.5s ease-out forwards;
+  -webkit-animation: fadeInHoriz 0.5s ease-out forwards; }
+
+.fade-in-from-right {
+  opacity: 0;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+  animation: fadeInHoriz 0.5s ease-out forwards;
+  -webkit-animation: fadeInHoriz 0.5s ease-out forwards; }
+
+@keyframes fadeInHoriz {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@-webkit-keyframes fadeInHoriz {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+.anim-delay-5 {
+  animation-delay: 500ms;
+  -webkit-animation-delay: 500ms; }
+
+.anim-delay-10 {
+  animation-delay: 1000ms;
+  -webkit-animation-delay: 1000ms; }
+
+.anim-delay-15 {
+  animation-delay: 1500ms;
+  -webkit-animation-delay: 1500ms; }
+
+.anim-delay-20 {
+  animation-delay: 2000ms;
+  -webkit-animation-delay: 2000ms; }
+
+.anim-delay-25 {
+  animation-delay: 2500ms;
+  -webkit-animation-delay: 2500ms; }
+
+.anim-delay-30 {
+  animation-delay: 3000ms;
+  -webkit-animation-delay: 3000ms; }
+
+.anim-delay-35 {
+  animation-delay: 3500ms;
+  -webkit-animation-delay: 3500ms; }
+
+.anim-delay-40 {
+  animation-delay: 4000ms;
+  -webkit-animation-delay: 4000ms; }
+
+.anim-delay-45 {
+  animation-delay: 4500ms;
+  -webkit-animation-delay: 4500ms; }
+
+.anim-delay-50 {
+  animation-delay: 5000ms;
+  -webkit-animation-delay: 5000ms; }

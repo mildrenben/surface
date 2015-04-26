@@ -1,0 +1,53 @@
+[id^="collapsible-"] {
+  display: none; }
+  [id^="collapsible-"]:checked ~ [class^="collapsible-"][class$="area"] {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    height: auto;
+    padding: 15px 20px;
+    margin-bottom: 20px; }
+  [id^="collapsible-"]:checked + label:before {
+    margin-top: 5px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  [id^="collapsible-"]:checked + label:after {
+    margin-top: 5px;
+    -webkit-transform: rotate(45deg) translate(4px, -3px);
+            transform: rotate(45deg) translate(4px, -3px); }
+
+label[for^="collapsible-"] {
+  width: 100%;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 15px 20px;
+  border-bottom: solid 1px #ebebeb;
+  color: #474747;
+  border-radius: 3px; }
+  label[for^="collapsible-"]:before, label[for^="collapsible-"]:after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    width: 2px;
+    height: 8px;
+    background: #9e9e9e;
+    transition: all 0.3s ease; }
+  label[for^="collapsible-"]:before {
+    margin-top: 2px;
+    -webkit-transform: rotate(50deg);
+            transform: rotate(50deg); }
+  label[for^="collapsible-"]:after {
+    margin-top: 6px;
+    -webkit-transform: rotate(-50deg);
+            transform: rotate(-50deg); }
+
+[class^="collapsible-"][class$="area"] {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  height: 0;
+  transition: all 0.3s ease;
+  padding-left: 20px; }

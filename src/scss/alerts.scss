@@ -1,0 +1,24 @@
+@import './_imports/_variables';
+
+.alert-wrap {
+  position: relative;
+}
+
+.alert {
+  padding-bottom: 50px;
+}
+
+#alert-check {
+	display: none;
+	&:checked {
+		~ div, ~ label {
+			display: none;
+		}
+	}
+	+ label {
+		position: absolute;
+		right: 16px;
+		bottom: 10px;
+		cursor: pointer;
+	}
+}

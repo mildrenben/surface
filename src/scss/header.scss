@@ -1,0 +1,12 @@
+@import './_imports/_variables';
+
+header {
+	width: 100%;
+	padding-top: $space-med;
+	padding-bottom: $space-med;
+	background: $primary;
+	margin-bottom: $space-med;
+	h1, h2, h3 {
+		color: white;
+	}
+}

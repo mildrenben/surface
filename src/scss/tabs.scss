@@ -1,0 +1,111 @@
+@import './_imports/_variables';
+
+@mixin tabs($num-of-tabs, $tab-set-name) {
+  .tabs input[type="radio"][name="tabs"] {
+    @for $i from 1 through $num-of-tabs {
+      &:nth-of-type(#{$i}) {
+        &:checked {
+          ~ .slide-#{$tab-set-name} {
+            left: (100% / $num-of-tabs) * ($i - 1);
+            left: calc((100% / #{$num-of-tabs}) * #{$i - 1});
+          }
+        }
+      }
+    }
+  }
+  .slide-#{$tab-set-name} {
+    width:(100% / $num-of-tabs);
+  	width: calc(100% / #{$num-of-tabs});
+  }
+  .tab-label-content {
+    @for $i from 1 through $num-of-tabs {
+      &:nth-of-type(#{$i}) {
+        .tab-content {
+          left: (100% * ($i - 1)) * -1;
+        }
+      }
+    }
+  }
+  .tab-content {
+    width: (100% * $num-of-tabs);
+    
+  }
+}
+
+.tabs {
+	display: flex;
+  position: relative;
+  padding: 0;
+}
+
+.tabs input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -1;
+  &:checked {
+    + .tab-label-content {
+      label {
+        color: white;
+      }
+      .tab-content {
+        display: block;
+      }
+    }
+  }
+  &:first-of-type {
+    &:checked {
+      ~ .slide {
+        left: 0;
+      }
+    }
+  }
+}
+
+@include tabs(3, demo);
+
+.tabs label {
+  cursor: pointer;
+  color: rgba(255,255,255,0.8);
+  background-color: $primary;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 56px;
+  transition: color 0.2s $cubic;
+  width: 100%;
+}
+
+.slide {
+  background: $accent;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  transition: left 0.3s $cubic;
+}
+
+.tab-label-content {
+  width: 100%;
+  .tab-content {
+    padding: $space-small;
+    position: relative;
+    padding: $space-med;
+    display: none;
+  }
+}
+
+.card.tabs {
+  .tab-label-content {
+    &:first-of-type {
+      label {
+        border-top-left-radius: $border-radius-small;
+      }
+    }
+    &:nth-last-child(2) {
+      label {
+        border-top-right-radius: $border-radius-small;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.tabs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0; }
+
+.tabs input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -1; }
+  .tabs input[type="radio"][name="tabs"]:checked + .tab-label-content label {
+    color: white; }
+  .tabs input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
+    display: block; }
+  .tabs input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
+    left: 0; }
+
+.tabs input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide-demo {
+  left: 0%;
+  left: calc((100% / 3) * 0); }
+.tabs input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide-demo {
+  left: 33.33333%;
+  left: calc((100% / 3) * 1); }
+.tabs input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide-demo {
+  left: 66.66667%;
+  left: calc((100% / 3) * 2); }
+
+.slide-demo {
+  width: 33.33333%;
+  width: calc(100% / 3); }
+
+.tab-label-content:nth-of-type(1) .tab-content {
+  left: 0%; }
+.tab-label-content:nth-of-type(2) .tab-content {
+  left: -100%; }
+.tab-label-content:nth-of-type(3) .tab-content {
+  left: -200%; }
+
+.tab-content {
+  width: 300%; }
+
+.tabs label {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #1abc9c;
+  box-sizing: border-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 56px;
+  transition: color 0.2s cubic-bezier(.64, .09, .08, 1);
+  width: 100%; }
+
+.slide {
+  background: #ffeb3b;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  transition: left 0.3s cubic-bezier(.64, .09, .08, 1); }
+
+.tab-label-content {
+  width: 100%; }
+  .tab-label-content .tab-content {
+    padding: 10px;
+    position: relative;
+    padding: 20px;
+    display: none; }
+
+.card.tabs .tab-label-content:first-of-type label {
+  border-top-left-radius: 3px; }
+.card.tabs .tab-label-content:nth-last-child(2) label {
+  border-top-right-radius: 3px; }

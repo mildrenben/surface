@@ -1,0 +1,63 @@
+@import './_imports/_variables';
+
+[class^="btn"] {
+	transition: all 0.3s $cubic;
+	box-shadow: $box-shadow-float;
+	position: relative;
+	cursor: pointer;
+	background-size: 1%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	transition: all 0.4s $cubic;
+	padding: $space-small $space-med;
+	display: inline-block;
+	font-family: Roboto;
+	border: 0;
+	&:after {
+		position: absolute;
+		content: '';
+		transition: none;
+		background: radial-gradient(circle, white 95%, rgba(0,0,0,0) 95%);
+		background-size: 0.7%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+	}
+	&:focus {
+		outline: none;
+		background-size: 1000%;
+    	transition: all 1s $cubic;
+	}
+}
+
+@mixin btn-gradient($c) {
+	background-image: radial-gradient(circle, $c 1%, lighten($c, 15%) 15%, rgba(0,0,0,0) 30%);
+	background-color: $c;
+}
+
+.btn--float {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	@include btn-gradient($accent);
+	&:hover {
+		box-shadow: $box-shadow-float-hover;
+		background-color: lighten($accent, 5%);
+	}
+}
+
+.btn--raised {
+	border-radius: $border-radius-small*0.66;
+	background-color: $secondary;
+	box-shadow: $box-shadow-raised;
+	@include btn-gradient($secondary);
+	&:hover {
+		box-shadow: $box-shadow-raised-hover;
+		background-color: lighten($secondary, 5%);
+	}
+}
+
+.btn--flat {
+	@include btn-gradient($secondary);
+	background-color: $body-background;
+	box-shadow: none;
+}

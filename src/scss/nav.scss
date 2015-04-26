@@ -1,0 +1,101 @@
+@import './_imports/_variables';
+@import './_imports/_colors';
+
+.nav--horizontal {
+	display: flex;
+	ul, ol {
+		margin-left: 0;
+	}
+	> ul, > li {
+		display: flex;
+	}
+	a {
+		display: inline-block;
+	}
+	li { 
+/* 		&:first-child a {
+			margin-right: $space-small*0.7;
+		}
+		&:last-child a {
+			margin-left: $space-small*0.7;
+		}
+		a {
+			margin-left: $space-small*0.7;
+			margin-right: $space-small*0.7;
+		} */
+	}
+}
+
+.nav--vertical {
+	ul, ol {
+		margin-left: 0;
+	}
+	ul, li, a {
+		display: inline-block;
+		float: left;
+		clear: left;
+	}
+	li { 
+		&:first-child a {
+			margin-bottom: $space-small*0.7;
+		}
+		&:last-child a {
+			margin-top: $space-small*0.7;
+		}
+		a {
+			margin-top: $space-small*0.7;
+			margin-bottom: $space-small*0.7;
+		}
+	}
+}
+
+header .nav--vertical, header .nav--horizontal {
+	a {
+		color: $primary;
+		background: white;
+		padding: $space-small;
+		transition: none;
+		&:hover {
+			background: lighten($grey, 28%);
+		}
+	}
+}
+
+.dropdown {
+	position: relative;
+	ul {
+		position: absolute;
+		background: white;
+		left: 0;
+		transition: all 0.3s ease;
+		transform: scale(0);
+		transform-origin: 0 0;
+		z-index: 2;
+		box-shadow: $box-shadow-card;
+		width: 100%;
+		li {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			&:first-child a {
+				border-radius: $border-radius-small $border-radius-small 0 0;
+			}
+			&:last-child a {
+				border-radius: 0 0 $border-radius-small $border-radius-small;
+				margin-left: 0;
+			}
+			a {
+				width: 100%;
+				padding: 8px 10px;
+				display: inline-block;
+				margin: 0;
+				border-radius: 0;
+			}
+		}
+	}
+	&:hover {
+		ul {
+			transform: scale(1);
+		}
+	}
+}

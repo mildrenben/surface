@@ -1,0 +1,33 @@
+@import './_imports/_variables';
+@import './_imports/_colors';
+
+table {
+	width: 100%;
+}
+
+.table--header {
+	color: lighten($black, 15%);
+	font-size: $font-med;
+	line-height: $space-big*1.3;
+}
+
+tr {
+	font-size: $font-med + 1px;
+	line-height: $space-big*1.3;
+	border-bottom: solid 1px lighten($grey, 30%);
+	&:not(.table--header) {
+		&:hover {
+			background: lighten($grey, 30%);
+		}
+	}
+}
+
+td {
+	&:first-child {
+		padding-left: $space-big;
+	}
+	&:last-child {
+		padding-right: $space-big;
+	}
+
+}

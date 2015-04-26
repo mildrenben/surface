@@ -1,0 +1,64 @@
+@import './_imports/_variables';
+
+.collapsible-wrap {
+
+}
+
+[id^="collapsible-"] {
+	display: none;
+	&:checked {
+		~ [class^="collapsible-"][class$="area"] { // Collapsible content
+			transform: scaleY(1);
+			height: auto;
+			padding: $space-small*1.5 $space-med;
+			margin-bottom: $space-med;
+		}
+		+ label {
+			&:before {
+				margin-top: 5px;
+				transform: rotate(-45deg);
+			}
+			&:after {
+				margin-top: 5px;
+				transform: rotate(45deg) translate(4px, -3px);
+			}
+		}
+	}
+}
+
+label[for^="collapsible-"] { // Label
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	position: relative;
+	padding: $space-small*1.5 $space-med;
+	border-bottom: solid 1px lighten($grey, 30%);
+	color: lighten($black, 15%);
+	border-radius: 3px;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		right: $space-med;
+		width: 2px;
+		height: 8px;
+		background: $grey;
+		transition: all 0.3s ease;
+	}
+	&:before {
+		margin-top: 2px;
+		transform: rotate(50deg);
+	}
+	&:after {
+		margin-top: 6px;
+		transform: rotate(-50deg);
+		
+	}
+}
+
+[class^="collapsible-"][class$="area"] { // Collapsible content
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	height: 0;
+	transition: all 0.3s ease;
+	padding-left: $space-med;
+}

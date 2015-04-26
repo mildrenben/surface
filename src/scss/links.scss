@@ -1,0 +1,17 @@
+@import './_imports/_variables';
+
+a {
+	background: linear-gradient(to top, rgba($secondary, 0.8) 50%, rgba(255,255,255,0) 50%);
+	background-size: 100% 200%;
+	background-position: 0 10%;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.3s $cubic;
+	&:active {
+		color: inherit;
+	}
+	&:hover {
+		background-position: 0 100%;
+	}
+}

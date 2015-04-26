@@ -1,0 +1,224 @@
+@import './_imports/_variables';
+
+label {
+	color: lighten($black, 5%);
+}
+
+input {
+	&[type="email"], &[type="text"], 
+	&[type="password"], &[type="textarea"] {
+	  margin-bottom: $space-big;
+	  width: 200px;
+	  display: block;
+	  border: none;
+	  padding: 10px 0;
+	  border-bottom: solid 1px $primary;
+	  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+	  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $primary 96%);
+	  background-position: -200px 0;
+	  background-size: 200px 100%;
+	  background-repeat: no-repeat;
+	  color: darken($primary, 20%);
+	  &:focus, &:valid {
+	    box-shadow: none;
+	    outline: none;
+	    background-position: 0 0;
+	    &::-webkit-input-placeholder,
+	    &::-moz-input-placeholder,
+	    &:-moz-input-placeholder  {
+	      color: $primary;
+	      font-size: 11px;
+	      transform: translateY(-20px);
+	      visibility: visible !important;
+	    }
+	  }
+	}
+	&::-webkit-input-placeholder {
+		transition: all 0.2s $cubic;
+	}
+}
+
+input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([id^="lightbox-"]) {
+	position: relative;
+	cursor: pointer;
+	&:before {
+		content: '';
+		width: 16px;
+		height: 16px;
+		border: solid 2px $primary;
+		border-radius: $border-radius-small;
+		background: white;
+		transition: all 0.3s $cubic;
+		position: absolute;
+	}
+	&:after {
+		content: '✓';
+		color: white;
+		background: $primary;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 16px;
+		height: 16px;
+		border: solid 2px $primary;
+		border-radius: $border-radius-small;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		transition: opacity 0.3s $cubic;
+	}
+	&:checked {
+		&:after {
+			opacity: 1;
+		}
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type="radio"] {
+	position: relative;
+	top: 2px;
+	left: 2px;
+	margin: 0 8px;
+	cursor: pointer;
+	&:before {
+		content: '';
+		background-color: white;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		border: solid 2px $primary;
+		display: inline-block;
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		background-image: radial-gradient(circle, $primary 40%, white 50%);
+		background-size: 0;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		transition: all 0.3s $cubic;
+		z-index: 2;
+	}
+	&:after {
+		content: '';
+		width: 16px;
+		height: 16px;
+		background: white;
+		border-radius: 50%;
+		position: absolute;
+		transition: all 0.3s $cubic;
+	}
+	&:checked {
+		&:before {
+			background-size: 14px 14px;
+		}
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+select {
+	border: none;
+	border-bottom: solid 1px $grey;
+	color: $black;
+	padding: 6px;
+	cursor: pointer;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  &:focus {
+  	outline: none;
+  }
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 3px;
+  cursor: pointer;
+  background: $grey;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: $emerald;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+  box-shadow: $box-shadow-card;
+}
+
+input[type=range]::-moz-range-track {
+  height: 3px;
+  cursor: pointer;
+  background: $grey;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: none;
+  background: $emerald;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: $emerald;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: $grey;
+}
+
+input[type=range]::-ms-thumb {
+  background: $emerald;
+}
+
+.toggle {
+  display: none;
+  &:checked {
+    + label {
+      background: lighten($emerald, 25%);
+      &:after {
+        background: $emerald;
+      	margin-left: 18px;
+      }
+    }
+  }
+}
+
+.toggle + label {
+	position: absolute;
+	width: 30px;
+	height: 6px;
+	margin-top: 12px;
+	background: $grey;
+	transition: all 0.3s ease;
+	&:after {
+		position: absolute;
+		content: '';
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		background: lighten($grey, 25%);
+		display: inline-block;
+		cursor: pointer;
+		margin-top: -4px;
+		margin-left: -1px;
+		transition: all 0.3s ease;
+		box-shadow: $box-shadow-card;
+	}
+}

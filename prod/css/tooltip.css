@@ -1,0 +1,13 @@
+.tooltip {
+  position: relative; }
+  .tooltip:hover:after {
+    position: absolute;
+    content: attr(data-text);
+    background: #9e9e9e;
+    border-radius: 3px;
+    padding: 8px;
+    bottom: -2em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 2; }

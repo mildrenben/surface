@@ -1,0 +1,8 @@
+header {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #1abc9c;
+  margin-bottom: 20px; }
+  header h1, header h2, header h3 {
+    color: white; }

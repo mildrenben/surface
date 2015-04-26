@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Gentium+Book+Basic:400,700);
+div, p, h1, h2, h3, h4, h5, h6, a, input, label, header, aside, menu, body {
+  font-family: Roboto, sans-serif;
+  color: #212121; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 20px; }
+
+h1 {
+  font-size: 30px; }
+
+h2 {
+  font-size: 27px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 21px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 15px; }
+
+p, a {
+  font-size: 16px; }
+
+.subtitle {
+  font-style: italic;
+  color: #919191; }
