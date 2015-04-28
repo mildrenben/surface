@@ -1,9 +1,5 @@
 @import './_imports/_variables';
 
-.collapsible-wrap {
-
-}
-
 [id^="collapsible-"] {
 	display: none;
 	&:checked {
@@ -59,6 +55,7 @@ label[for^="collapsible-"] { // Label
 	transform: scaleY(0);
 	transform-origin: 0 0;
 	height: 0;
+	will-change: height, transform;
 	transition: all 0.3s ease;
 	padding-left: $space-med;
 }

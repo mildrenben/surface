@@ -12,13 +12,13 @@ input[id^="lightbox-"] {
 
 input[id^="lightbox-"]:checked {
 	display: block;
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	&:before {
 		content: '';
 		position: fixed;
-		z-index: 3;
+		z-index: 9;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -31,6 +31,6 @@ input[id^="lightbox-"]:checked {
 		transform: translate(-50%, -50%);
 		width: 50vw;
 		position: fixed;
-		z-index: 4;
+		z-index: 10;
 	}
 }

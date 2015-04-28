@@ -9,7 +9,8 @@ table {
 tr {
   font-size: 17px;
   line-height: 52px;
-  border-bottom: solid 1px #ebebeb; }
+  border-bottom: solid 1px #ebebeb;
+  will-change: background; }
   tr:not(.table--header):hover {
     background: #ebebeb; }
 

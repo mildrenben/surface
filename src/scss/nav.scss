@@ -12,18 +12,6 @@
 	a {
 		display: inline-block;
 	}
-	li { 
-/* 		&:first-child a {
-			margin-right: $space-small*0.7;
-		}
-		&:last-child a {
-			margin-left: $space-small*0.7;
-		}
-		a {
-			margin-left: $space-small*0.7;
-			margin-right: $space-small*0.7;
-		} */
-	}
 }
 
 .nav--vertical {
@@ -49,12 +37,157 @@
 	}
 }
 
+.logo-area {
+	width: 100%;
+	height: 100px;
+	border-bottom: solid 1px lighten($grey, 26%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: lighten($black, 15%);
+}
+
+.nav--super-vertical {
+	position: fixed;
+	height: 100%;
+	background: $body-background;
+	z-index: 7;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	a, label {
+		width: 100%;
+		display: block;
+		text-decoration: none;
+		color: lighten($black, 15%);
+		cursor: pointer;
+		font-weight: 500;
+		padding: 20px 24px;
+		transition: none;
+		background-image: none;
+		&:hover {
+			background: lighten($grey, 26%);
+		}
+	}
+	input {
+	display: none;
+		&:checked {
+			+ label {
+			  transition: background 0.2s $cubic, color 0.2s $cubic;
+			  background: lighten($grey, 26%);
+			}
+			~ .nav-collapsible-links {
+			  height: auto;
+			  transform: scaleY(1);
+			  a {
+			    height: 54px;
+			  }
+			}
+		}
+	}
+}
+
+.nav-collapsible-links {
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	transition: transform 0.3s $cubic;
+	a {
+		padding: 0 24px 0 34px;
+		height: 0;
+		font-weight: 400;
+		transition: height 0.3s $cubic;
+		display: flex;
+		align-items: center;
+	}
+}
+
+#nav--super-vertical-responsive,
+#nav--super-vertical-responsive + label,
+#nav--horizontal-responsive,
+#nav--horizontal-responsive + label {
+	display: none;
+}
+
+@media screen and (max-width: $media-med) {
+	.nav--super-vertical {
+		padding-top: 40px;
+		transform: translateX(-100%);
+		transition: transform 0.3s $cubic;
+	}
+	#nav--super-vertical-responsive + label {
+		display: block;
+		position: fixed;
+		z-index: 8;
+		top: 0;
+		left: 0;
+		padding: $space-small;
+		background: $body-background;
+		box-shadow: $box-shadow-card;
+		cursor: pointer;
+		transition: background 0.3s $cubic, color 0.3s $cubic;
+	}
+	#nav--super-vertical-responsive:checked {
+		+ label {
+			background: $primary;
+			color: white;
+		}
+		~ .nav--super-vertical {
+			transform: translateX(0);
+		}
+	}
+}
+
+@media screen and (max-width: $media-small) {
+	.nav--horizontal {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 7;
+		transform: translateY(-100%);
+		transition: transform 0.3s $cubic;
+		ul, li, a {
+			width: 100%;
+			display: block;
+			margin: 0;
+		}
+		a {
+			line-height: $space-big;
+		}
+		> ul {
+			padding-top: 50px;
+			background: $body-background;
+			box-shadow: $box-shadow-card;
+		}
+	}
+	#nav--horizontal-responsive + label {
+		display: block;
+		position: fixed;
+		z-index: 8;
+		top: 0;
+		left: 0;
+		padding: $space-small;
+		background: $body-background;
+		box-shadow: $box-shadow-card;
+		cursor: pointer;
+		transition: background 0.3s $cubic, color 0.3s $cubic;
+	}
+	#nav--horizontal-responsive:checked {
+		+ label {
+			background: $primary;
+			color: white;
+		}
+		~ .nav--horizontal {
+			transform: translateY(0);
+		}
+	}
+}
+
 header .nav--vertical, header .nav--horizontal {
 	a {
 		color: $primary;
 		background: white;
 		padding: $space-small;
 		transition: none;
+		will-change: background;
 		&:hover {
 			background: lighten($grey, 28%);
 		}
@@ -77,13 +210,6 @@ header .nav--vertical, header .nav--horizontal {
 			width: 100%;
 			margin: 0;
 			padding: 0;
-			&:first-child a {
-				border-radius: $border-radius-small $border-radius-small 0 0;
-			}
-			&:last-child a {
-				border-radius: 0 0 $border-radius-small $border-radius-small;
-				margin-left: 0;
-			}
 			a {
 				width: 100%;
 				padding: 8px 10px;

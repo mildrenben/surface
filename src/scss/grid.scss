@@ -1,45 +1,45 @@
 @import './_imports/_variables';
 
 @for $i from 1 through $grid-columns {
-	.grid--#{$i} {
+	.g--#{$i} {
 		width: 100%/$grid-columns*$i;
 	}
 	@media screen and (max-width: $media-med) {
-		.grid-med--#{$i} {
-			width: 100%/$grid-columns*$i !important;
+		.g-med--#{$i} {
+			width: 100%/$grid-columns*$i;
 		}
 	}
 	@media screen and (max-width: $media-small) {
-		.grid-small--#{$i} {
+		.g-small--#{$i} {
 			width: 100%/$grid-columns*$i;
 		}
 	}
 	@media screen and (max-width: $media-tiny) {
-		.grid-tiny--#{$i} {
+		.g-tiny--#{$i} {
 			width: 100%/$grid-columns*$i;
 		}
 	}
-	.margin--#{$i} {
+	.m--#{$i} {
 		margin-left: 100%/$grid-columns*$i;
 		margin-top: $space-med;
 		margin-bottom: $space-med;
 	}
 	@media screen and (max-width: $media-med) {
-		.margin-med--#{$i} {
+		.m-med--#{$i} {
 			margin-left: 100%/$grid-columns*$i;
 			margin-top: $space-med;
 			margin-bottom: $space-med;
 		}
 	}
 	@media screen and (max-width: $media-small) {
-		.margin-small--#{$i} {
+		.m-small--#{$i} {
 			margin-left: 100%/$grid-columns*$i;
 			margin-top: $space-small;
 			margin-bottom: $space-small;
 		}
 	}
 	@media screen and (max-width: $media-tiny) {
-		.margin-tiny--#{$i} {
+		.m-tiny--#{$i} {
 			margin-left: 100%/$grid-columns*$i;
 			margin-top: $space-small;
 			margin-bottom: $space-small;
@@ -48,19 +48,19 @@
 }
 
 @media screen and (max-width: $media-med) {
-	.margin-med--0 {
+	.m-med--0 {
 		margin-left: 0;
 	}
 }
 
 @media screen and (max-width: $media-small) {
-	.margin-small--0 {
+	.m-small--0 {
 		margin-left: 0;
 	}
 }
 
 @media screen and (max-width: $media-tiny) {
-	.margin-tiny--0 {
+	.m-tiny--0 {
 		margin-left: 0;
 	}
 }

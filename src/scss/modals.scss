@@ -17,7 +17,7 @@ input[id^="modal-"] {
 					height: 100%;
 					background: rgba(0,0,0,0.4);
 					transition: all 0.3s $cubic;
-					z-index: 3;
+					z-index: 9;
 				}
 			}
 		~ .modal-content {
@@ -30,7 +30,7 @@ input[id^="modal-"] {
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%);
-			z-index: 4;
+			z-index: 10;
 			* {
 				height: auto;
 				width: auto;

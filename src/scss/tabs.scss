@@ -73,6 +73,7 @@
   text-align: center;
   height: 56px;
   transition: color 0.2s $cubic;
+  will-change: color;
   width: 100%;
 }
 
@@ -83,6 +84,7 @@
   left: 0;
   top: 52px;
   transition: left 0.3s $cubic;
+  will-change: left;
 }
 
 .tab-label-content {

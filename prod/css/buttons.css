@@ -3,10 +3,11 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   position: relative;
   cursor: pointer;
-  background-size: 1%;
+  background-size: 0;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  transition: all 0.4s cubic-bezier(.64, .09, .08, 1);
+  transition: background-color 0.3s cubic-bezier(.64, .09, .08, 1), box-shadow 0.3s cubic-bezier(.64, .09, .08, 1);
+  will-change: background-size, background-image;
   padding: 10px 20px;
   display: inline-block;
   font-family: Roboto;
@@ -29,7 +30,8 @@
   width: 50px;
   height: 50px;
   background-image: radial-gradient(circle, #ffeb3b 1%, #fff387 15%, transparent 30%);
-  background-color: #ffeb3b; }
+  background-color: #ffeb3b;
+  will-change: box-shadow, background-color; }
   .btn--float:hover {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     background-color: #ffee55; }
@@ -39,7 +41,8 @@
   background-color: #28e1bd;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-image: radial-gradient(circle, #28e1bd 1%, #6bebd1 15%, transparent 30%);
-  background-color: #28e1bd; }
+  background-color: #28e1bd;
+  will-change: box-shadow, background-color; }
   .btn--raised:hover {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     background-color: #3ee4c4; }

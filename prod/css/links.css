@@ -5,7 +5,8 @@ a {
   background-repeat: no-repeat;
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s cubic-bezier(.64, .09, .08, 1); }
+  transition: background-position 0.3s cubic-bezier(.64, .09, .08, 1);
+  will-change: background-position; }
   a:active {
     color: inherit; }
   a:hover {

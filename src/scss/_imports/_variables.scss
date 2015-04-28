@@ -6,8 +6,8 @@ $sans: Roboto, sans-serif;
 $font-small: 12px;
 $font-med: 16px;
 $font-big: 22px;
-
 $font-huge: 30px;
+$line-height: 130%;
 
 // Colors
 $primary: $turqoise;
@@ -17,7 +17,7 @@ $accent: $yellow;
 $body-background: $paper;
 
 // Grid
-$grid-columns: 10;
+$grid-columns: 12;
 
 // Decorative
 $box-shadow-card: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.09);
@@ -39,7 +39,7 @@ $space-big: 40px;
 
 // Media Queries
 $media-med: 1200px;
-$media-small: 800px;
-$media-tiny: 420px;
+$media-small: 900px;
+$media-tiny: 520px;
 
 

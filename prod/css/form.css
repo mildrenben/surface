@@ -9,6 +9,7 @@ input[type="email"], input[type="text"], input[type="password"], input[type="tex
   border: none;
   padding: 10px 0;
   border-bottom: solid 1px #1abc9c;
+  will-change: background-position;
   transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 96%);
   background-position: -200px 0;
@@ -26,7 +27,8 @@ input[type="email"], input[type="text"], input[type="password"], input[type="tex
               transform: translateY(-20px);
       visibility: visible !important; }
 input::-webkit-input-placeholder {
-  transition: all 0.2s cubic-bezier(.64, .09, .08, 1); }
+  transition: all 0.2s cubic-bezier(.64, .09, .08, 1);
+  will-change: transform, color, font-size; }
 
 input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([id^="lightbox-"]) {
   position: relative;
@@ -38,7 +40,6 @@ input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([i
     border: solid 2px #1abc9c;
     border-radius: 3px;
     background: white;
-    transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
     position: absolute; }
   input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([id^="lightbox-"]):after {
     content: '✓';
@@ -61,7 +62,8 @@ input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([i
         -ms-flex-pack: center;
             justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s cubic-bezier(.64, .09, .08, 1); }
+    transition: opacity 0.3s cubic-bezier(.64, .09, .08, 1);
+    will-change: opacity; }
   input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([id^="lightbox-"]):checked:after {
     opacity: 1; }
   input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([id^="lightbox-"]):focus {
@@ -89,6 +91,7 @@ input[type="radio"] {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
+    will-change: background-size;
     z-index: 2; }
   input[type="radio"]:after {
     content: '';
@@ -172,7 +175,8 @@ input[type=range]::-ms-thumb {
   height: 6px;
   margin-top: 12px;
   background: #9e9e9e;
-  transition: all 0.3s ease; }
+  transition: background 0.3s cubic-bezier(.64, .09, .08, 1);
+  will-change: background; }
   .toggle + label:after {
     position: absolute;
     content: '';
@@ -185,4 +189,5 @@ input[type=range]::-ms-thumb {
     margin-top: -4px;
     margin-left: -1px;
     transition: all 0.3s ease;
+    will-change: background, margin-left;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.09); }

@@ -49,5 +49,6 @@ label[for^="collapsible-"] {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   height: 0;
+  will-change: height, transform;
   transition: all 0.3s ease;
   padding-left: 20px; }
