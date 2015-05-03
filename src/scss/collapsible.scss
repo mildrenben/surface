@@ -1,9 +1,9 @@
 @import './_imports/_variables';
 
-[id^="collapsible-"] {
+[id*="collapsible-"] {
 	display: none;
 	&:checked {
-		~ [class^="collapsible-"][class$="area"] { // Collapsible content
+		~ [class*="collapsible-"][class$="area"] { // Collapsible content
 			transform: scaleY(1);
 			height: auto;
 			padding: $space-small*1.5 $space-med;
@@ -11,8 +11,8 @@
 		}
 		+ label {
 			&:before {
-				margin-top: 5px;
-				transform: rotate(-45deg);
+				margin-top: 6px;
+				transform: rotate(-45deg) translateX(1px);
 			}
 			&:after {
 				margin-top: 5px;
@@ -22,12 +22,12 @@
 	}
 }
 
-label[for^="collapsible-"] { // Label
+label[for*="collapsible-"] { // Label
 	width: 100%;
 	cursor: pointer;
 	display: flex;
 	position: relative;
-	padding: $space-small*1.5 $space-med;
+	padding: $space-small*1.5 24px;
 	border-bottom: solid 1px lighten($grey, 30%);
 	color: lighten($black, 15%);
 	border-radius: 3px;
@@ -51,7 +51,7 @@ label[for^="collapsible-"] { // Label
 	}
 }
 
-[class^="collapsible-"][class$="area"] { // Collapsible content
+[class*="collapsible-"][class$="area"] { // Collapsible content
 	transform: scaleY(0);
 	transform-origin: 0 0;
 	height: 0;

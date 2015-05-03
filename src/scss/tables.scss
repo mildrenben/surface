@@ -5,7 +5,7 @@ table {
 	width: 100%;
 }
 
-.table--header {
+.table-header {
 	color: lighten($black, 15%);
 	font-size: $font-med;
 	line-height: $space-big*1.3;
@@ -16,7 +16,7 @@ tr {
 	line-height: $space-big*1.3;
 	border-bottom: solid 1px lighten($grey, 30%);
 	will-change: background;
-	&:not(.table--header) {
+	&:not(.table-header) {
 		&:hover {
 			background: lighten($grey, 30%);
 		}
@@ -26,9 +26,21 @@ tr {
 td {
 	&:first-child {
 		padding-left: $space-big;
+		@media screen and (max-width: $media-med) {
+			padding-left: $space-big*0.8;
+		}
+		@media screen and (max-width: $media-small) {
+			padding-left: $space-med;
+		}
 	}
 	&:last-child {
 		padding-right: $space-big;
+		@media screen and (max-width: $media-med) {
+			padding-right: $space-big*0.8;
+		}
+		@media screen and (max-width: $media-small) {
+			padding-right: $space-med;
+		}
 	}
 
 }

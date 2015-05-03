@@ -1,16 +1,16 @@
 @import './_imports/_variables';
 
-label[for^="lightbox-"] {
+label[for*="lightbox-"] {
 	cursor: pointer;
 	width: 100%;
 	transition: none;
 }
 
-input[id^="lightbox-"] {
+input[id*="lightbox-"] {
 	display: none;
 }
 
-input[id^="lightbox-"]:checked {
+input[id*="lightbox-"]:checked {
 	display: block;
 	position: absolute;
 	top: 50%;

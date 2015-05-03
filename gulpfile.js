@@ -1,11 +1,12 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
+	minifyCss = require('gulp-minify-css'),
 	browserSync = require('browser-sync').create(),
 	reload = browserSync.reload,
 
 	src = {
-		scss: './src/scss/**/*.scss'
+		scss: './src/scss/surface_styles.scss'
 	},
 
 	prod = {
@@ -18,7 +19,7 @@ gulp.task('browser-sync', ['compile-scss'], function(){
 	});
 
 	gulp.watch(src.scss, ['compile-scss']);
-	gulp.watch('./prod/*.html').on('change', reload);
+	gulp.watch('./prod/**/*.html').on('change', reload);
 });
 
 gulp.task('compile-scss', function(){
@@ -29,6 +30,7 @@ gulp.task('compile-scss', function(){
 	.pipe(autoprefixer({
 		browsers: ['last 2 versions']
 	}))
+	.pipe(minifyCss())
 	.pipe(gulp.dest(prod.css))
 	.pipe(reload({
 		stream: true

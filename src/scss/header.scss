@@ -2,11 +2,20 @@
 
 header {
 	width: 100%;
-	padding-top: $space-med;
-	padding-bottom: $space-med;
+	padding-top: $space-small;
+	padding-bottom: $space-small;
 	background: $primary;
-	margin-bottom: $space-med;
+	margin-bottom: $space-big*1.75;
 	h1, h2, h3 {
 		color: white;
+	}
+	@media screen and (max-width: $media-med) {
+		margin-bottom: $space-big*0.85;
+		padding-top: $space-med;
+	}
+	@media screen and (max-width: $media-small) {
+		padding-top: $space-big;
+		padding-bottom: $space-small*0.5;
+		margin-bottom: $space-small*0.85;
 	}
 }

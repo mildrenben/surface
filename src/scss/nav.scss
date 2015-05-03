@@ -3,6 +3,8 @@
 
 .nav--horizontal {
 	display: flex;
+	margin-top: 0;
+	margin-bottom: 0;
 	ul, ol {
 		margin-left: 0;
 	}
@@ -15,6 +17,8 @@
 }
 
 .nav--vertical {
+	margin-top: 0;
+	margin-bottom: 0;
 	ul, ol {
 		margin-left: 0;
 	}
@@ -39,7 +43,7 @@
 
 .logo-area {
 	width: 100%;
-	height: 100px;
+	height: 152px;
 	border-bottom: solid 1px lighten($grey, 26%);
 	display: flex;
 	align-items: center;
@@ -48,10 +52,13 @@
 }
 
 .nav--super-vertical {
+	margin-top: 0;
+	margin-bottom: 0;
 	position: fixed;
 	height: 100%;
 	background: $body-background;
 	z-index: 7;
+	overflow-Y: auto;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	a, label {
 		width: 100%;
@@ -60,7 +67,7 @@
 		color: lighten($black, 15%);
 		cursor: pointer;
 		font-weight: 500;
-		padding: 20px 24px;
+		padding: $space-med 24px;
 		transition: none;
 		background-image: none;
 		&:hover {
@@ -85,7 +92,9 @@
 	}
 }
 
+
 .nav-collapsible-links {
+	height: 100%;
 	transform: scaleY(0);
 	transform-origin: 0 0;
 	transition: transform 0.3s $cubic;
@@ -181,7 +190,7 @@
 	}
 }
 
-header .nav--vertical, header .nav--horizontal {
+.nav--vertical, .nav--horizontal {
 	a {
 		color: $primary;
 		background: white;

@@ -1,7 +1,7 @@
 @import './_imports/_variables';
 @import './_imports/_colors';
 
-input[id^="modal-"] {
+input[id*="modal-"] {
 	display: none;
 	&:checked {
 		+ label {
@@ -40,6 +40,7 @@ input[id^="modal-"] {
 }
 
 .modal-trigger {
+	white-space: pre;
 	cursor: pointer;
 	@extend .btn--raised;
 	transition: all 0.3s $cubic;

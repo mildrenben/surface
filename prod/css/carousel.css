@@ -1,5 +1,0 @@
-.carousel img {
-  width: 100%; }
-  .carousel img:not(:first-of-type) {
-    position: relative;
-    transform: translateY(-100%); }

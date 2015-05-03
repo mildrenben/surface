@@ -2,3 +2,20 @@
 @import './_imports/_variables';
 
 // https://highlightjs.org/
+
+code {
+	font-family: monospace;
+	font-size: $font-med;
+	padding-left: 40px;
+	padding-right: 40px;
+	min-width: 500px;
+	max-width: 800px;
+	@media screen and (max-width: $media-small) {
+		width: 400px;
+	}
+	@media screen and (max-width: $media-tiny) {
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+	}
+}

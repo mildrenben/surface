@@ -1,10 +1,12 @@
 @import './_imports/_variables';
 
-[class^="btn"] {
+[class*="btn"] {
 	transition: all 0.3s $cubic;
 	box-shadow: $box-shadow-float;
 	position: relative;
 	cursor: pointer;
+	text-transform: uppercase;
+	margin-bottom: $space-small;
 	background-size: 0;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -41,6 +43,8 @@
 	height: 50px;
 	@include btn-gradient($accent);
 	will-change: box-shadow, background-color;
+	font-size: $font-big;
+	padding: 0;
 	&:hover {
 		box-shadow: $box-shadow-float-hover;
 		background-color: lighten($accent, 5%);
@@ -49,13 +53,13 @@
 
 .btn--raised {
 	border-radius: $border-radius-small*0.66;
-	background-color: $secondary;
 	box-shadow: $box-shadow-raised;
-	@include btn-gradient($secondary);
+	@include btn-gradient($river);
 	will-change: box-shadow, background-color;
+	color: white;
 	&:hover {
 		box-shadow: $box-shadow-raised-hover;
-		background-color: lighten($secondary, 5%);
+		background-color: lighten($river, 5%);
 	}
 }
 
@@ -64,3 +68,53 @@
 	background-color: $body-background;
 	box-shadow: none;
 }
+
+.btn--primary {
+	@include btn-gradient($primary);
+	&:hover {
+		background-color: lighten($primary, 5%);
+	}
+}
+
+.btn--secondary {
+	@include btn-gradient($secondary);
+	&:hover {
+		background-color: lighten($secondary, 5%);
+	}
+}
+
+.btn--accent {
+	@include btn-gradient($accent);
+	&:hover {
+		background-color: lighten($accent, 5%);
+	}
+}
+
+.btn--red {
+	@include btn-gradient($alizarin);
+	&:hover {
+		background-color: lighten($alizarin, 5%);
+	}
+}
+
+.btn--yellow {
+	@include btn-gradient($sunflower);
+	&:hover {
+		background-color: lighten($sunflower, 5%);
+	}
+}
+
+.btn--green {
+	@include btn-gradient($green);
+	&:hover {
+		background-color: lighten($green, 5%);
+	}
+}
+
+.btn--blue {
+	@include btn-gradient($blue);
+	&:hover {
+		background-color: lighten($blue, 5%);
+	}
+}
+

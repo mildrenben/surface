@@ -7,7 +7,12 @@ div, p, h1, h2, h3, h4, h5, h6, a, input, label, header, aside, menu, body {
 	color: $black;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1em*0.8;
+	line-height: 130%;
+}
+
+p {
 	margin-bottom: $space-med;
 }
 
@@ -16,23 +21,23 @@ h1 {
 }
 
 h2 {
-	font-size: $font-huge*0.9;
+	font-size: $font-huge*0.85;
 }
 
 h3 {
-	font-size: $font-huge*0.8;
-}
-
-h4 {
 	font-size: $font-huge*0.7;
 }
 
+h4 {
+	font-size: $font-huge*0.62;
+}
+
 h5 {
-	font-size: $font-huge*0.6;
+	font-size: $font-huge*0.52;
 }
 
 h6 {
-	font-size: $font-huge*0.5;
+	font-size: $font-huge*0.45;
 }
 
 p, a {

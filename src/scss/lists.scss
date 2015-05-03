@@ -2,7 +2,8 @@
 @import './_imports/_colors';
 
 ul, ol {
-	margin-left: $space-big;
+	margin-left: $space-med;
+	margin-bottom: $space-med;
 	li {
 		margin-top: $space-small*1;
 	}

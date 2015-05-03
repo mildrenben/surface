@@ -24,23 +24,20 @@ input {
 	    box-shadow: none;
 	    outline: none;
 	    background-position: 0 0;
-	    &::-webkit-input-placeholder,
-	    &::-moz-input-placeholder,
-	    &:-moz-input-placeholder  {
+	    &::-webkit-input-placeholder {
 	      color: $primary;
 	      font-size: 11px;
 	      transform: translateY(-20px);
 	      visibility: visible !important;
 	    }
 	  }
-	}
-	&::-webkit-input-placeholder {
-		transition: all 0.2s $cubic;
-		will-change: transform, color, font-size;
+	  &::-webkit-input-placeholder {
+	  	transition: all 0.2s $cubic;
+	  }
 	}
 }
 
-input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([id^="lightbox-"]) {
+input[type="checkbox"]:not(.modal-trigger):not(.toggle):not(#alert-check):not([id*="lightbox-"]) {
 	position: relative;
 	cursor: pointer;
 	&:before {

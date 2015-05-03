@@ -60,7 +60,7 @@
   }
 }
 
-@include tabs(3, demo);
+@include tabs(3, demo); /* Use this mixin and specify the amount of tabs and the tab name */
 
 .tabs label {
   cursor: pointer;

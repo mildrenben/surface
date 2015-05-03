@@ -55,7 +55,7 @@
 }
 
 @for $i from 1 through 10 {
-	.anim-delay-#{$i*5} {
+	.anim-delay--#{$i*5} {
 		animation-delay: #{$i*500}ms;
 		-webkit-animation-delay: #{$i*500}ms;
 	}

@@ -6,6 +6,22 @@
 	float: left;
 }
 
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.block {
+	display: iblock;
+}
+
+.clear {
+	clear: both;
+}
+
 .no-pad {
 	padding: 0;
 }
@@ -17,8 +33,4 @@
 
 .no-margin {
 	margin: 0;
-}
-
-.inline-block {
-	display: inline-block;
 }

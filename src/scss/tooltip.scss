@@ -7,10 +7,10 @@
 		&:after {
 			position: absolute;
 			content: attr(data-text);
-			background: $grey;
+			background: lighten($grey, 10%);
 			border-radius: $border-radius-small;
 			padding: $space-small*0.8;
-			bottom: -2em;
+			bottom: -2.5em;
 			left: 50%;
 			transform: translateX(-50%);
 			z-index: 2;

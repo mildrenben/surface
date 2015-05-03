@@ -1,0 +1,369 @@
+@import './_imports/_variables';
+
+// Background
+// Greens
+.bg--turqoise {
+	background: $turqoise;
+}
+
+.bg--green-sea {
+	background: $green-sea;
+}
+
+.bg--emerald {
+	background: $emerald;
+}
+
+.bg--nephritis {
+	background: $nephritis;
+}
+
+.bg--green {
+	background: $green;
+}
+
+.bg--light-green {
+	background: $light-green;
+}
+
+.bg--lime {
+	background: $lime;
+}
+
+// Blues
+.bg--river {
+	background: $river;
+}
+
+.bg--belize {
+	background: $belize;
+}
+
+.bg--asphalt {
+	background: $asphalt;
+}
+
+.bg--midnight-blue {
+	background: $midnight-blue;
+}
+
+.bg--blue {
+	background: $blue;
+}
+
+.bg--light-blue {
+	background: $light-blue;
+}
+
+.bg--cyan {
+	background: $cyan;
+}
+
+.bg--teal {
+	background: $teal;
+}
+
+// Reds
+.bg--alizarin {
+	background: $alizarin;
+}
+
+.bg--pomegranate {
+	background: $pomegranate;
+}
+
+.bg--red {
+	background: $red;
+}
+
+// Oranges
+.bg--carrot {
+	background: $carrot;
+}
+
+.bg--pumpkin {
+	background: $pumpkin;
+}
+
+.bg--dull-orange {
+	background: $dull-orange;
+}
+
+.bg--orange {
+	background: $orange;
+}
+
+.bg--blood-orange {
+	background: $blood-orange;
+}
+
+.bg--amber {
+	background: $amber;
+}
+
+// Yellows
+.bg--sunflower {
+	background: $sunflower;
+}
+
+.bg--yellow {
+	background: $yellow;
+}
+
+// Purples and Pinks
+.bg--amethyst {
+	background: $amethyst;
+}
+
+.bg--plum {
+	background: $plum;
+}
+
+.bg--purple {
+	background: $purple;
+}
+
+.bg--deep-purple {
+	background: $deep-purple;
+}
+
+.bg--pink {
+	background: $pink;
+}
+
+.bg--indigo {
+	background: $indigo;
+}
+
+// Browns
+.bg--brown {
+	background: $brown;
+}
+
+// Greys
+.bg--grey {
+	background: $grey;
+}
+
+.bg--gun-metal {
+	background: $gun-metal;
+}
+
+.bg--asbestos {
+	background: $asbestos;
+}
+
+.bg--concrete {
+	background: $concrete;
+}
+
+.bg--silver {
+	background: $silver;
+}
+
+// Whites
+.bg--clouds {
+	background: $clouds;
+}
+
+.bg--paper {
+	background: $paper;
+}
+
+// Blacks
+.bg--black {
+	background: $black;
+}
+
+// Text Colors
+// Greens
+.color--turqoise {
+	color: $turqoise;
+}
+
+.color--green-sea {
+	color: $green-sea;
+}
+
+.color--emerald {
+	color: $emerald;
+}
+
+.color--nephritis {
+	color: $nephritis;
+}
+
+.color--green {
+	color: $green;
+}
+
+.color--light-green {
+	color: $light-green;
+}
+
+.color--lime {
+	color: $lime;
+}
+
+// Blues
+.color--river {
+	color: $river;
+}
+
+.color--belize {
+	color: $belize;
+}
+
+.color--asphalt {
+	color: $asphalt;
+}
+
+.color--midnight-blue {
+	color: $midnight-blue;
+}
+
+.color--blue {
+	color: $blue;
+}
+
+.color--light-blue {
+	color: $light-blue;
+}
+
+.color--cyan {
+	color: $cyan;
+}
+
+.color--teal {
+	color: $teal;
+}
+
+// Reds
+.color--alizarin {
+	color: $alizarin;
+}
+
+.color--pomegranate {
+	color: $pomegranate;
+}
+
+.color--red {
+	color: $red;
+}
+
+// Oranges
+.color--carrot {
+	color: $carrot;
+}
+
+.color--pumpkin {
+	color: $pumpkin;
+}
+
+.color--dull-orange {
+	color: $dull-orange;
+}
+
+.color--orange {
+	color: $orange;
+}
+
+.color--blood-orange {
+	color: $blood-orange;
+}
+
+.color--amber {
+	color: $amber;
+}
+
+// Yellows
+.color--sunflower {
+	color: $sunflower;
+}
+
+.color--yellow {
+	color: $yellow;
+}
+
+// Purples and Pinks
+.color--amethyst {
+	color: $amethyst;
+}
+
+.color--plum {
+	color: $plum;
+}
+
+.color--purple {
+	color: $purple;
+}
+
+.color--deep-purple {
+	color: $deep-purple;
+}
+
+.color--pink {
+	color: $pink;
+}
+
+.color--indigo {
+	color: $indigo;
+}
+
+// Browns
+.color--brown {
+	color: $brown;
+}
+
+// Greys
+.color--grey {
+	color: $grey;
+}
+
+.color--gun-metal {
+	color: $gun-metal;
+}
+
+.color--asbestos {
+	color: $asbestos;
+}
+
+.color--concrete {
+	color: $concrete;
+}
+
+.color--silver {
+	color: $silver;
+}
+
+// Whites
+.color--clouds {
+	color: $clouds;
+}
+
+.color--paper {
+	color: $paper;
+}
+
+.color--white {
+	color: white;
+}
+
+// Blacks
+.color--black {
+	color: $black;
+}
+
+// Other Text Colors
+.color--primary {
+	color: $primary;
+}
+
+.color--secondary {
+	color: $secondary;
+}
+
+.color--accent {
+	color: $accent;
+}
+

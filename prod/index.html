@@ -1,238 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="./css/test.css"/ rel="stylesheet">
+	<link rel="icon" href="/img/favicon-64x64.png" type="image/png">
+	<link href="../css/surface_styles.css" rel="stylesheet">
+	<link href="../css/monokai_sublime.css" rel="stylesheet">
+	<script src="../js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<input type="checkbox" id="nav--super-vertical-responsive">
 	<label for="nav--super-vertical-responsive">MENU</label>
-	<aside class="nav--super-vertical g--2 g-med--3 g-small--6 g-tiny--12">
-		<div class="g--12 logo-area">
-			Your logo here
+	<aside class="nav--super-vertical g--2 g-m--3 g-s--6 g-t--12 no-margin-vertical">
+		<div class="g--12 logo-area no-margin-vertical">
+			<h4 class="color--pink no-margin-vertical">Surface</h5>
 		</div>
-		<nav class="g--12">
-			<a href="">Home</a>
+		<nav class="g--12 no-margin-vertical">
+			<a href="/getting-started.html">Getting Started</a>
 			<div class="nav-collapsible">
 				<input type="checkbox" id="nav-collapsible-1">
-				<label for="nav-collapsible-1">Portfolio</label>
+				<label for="nav-collapsible-1">Components</label>
 				<div class="nav-collapsible-links">
-					<a href="">Art</a>
-					<a href="">Coding</a>
-					<a href="">Design</a>
-					<a href="">Print</a>
+					<a href="/docs/alerts.html">Alerts</a>
+					<a href="/docs/animations.html">Animations</a>
+					<a href="/docs/buttons.html">Buttons</a>
+					<a href="/docs/cards-tiles.html">Cards &amp; Tiles</a>
+					<a href="/docs/collapsibles.html">Collapsibles</a>
+					<a href="/docs/colors.html">Colors</a>
+					<a href="/docs/footer.html">Footer</a>
+					<a href="/docs/forms.html">Forms</a>
+					<a href="/docs/grid.html">Grid</a>
+					<a href="/docs/header.html">Header</a>
+					<a href="/docs/lightbox.html">Lightbox</a>
+					<a href="/docs/links.html">Links</a>
+					<a href="/docs/media.html">Media</a>
+					<a href="/docs/modals.html">Modals</a>
+					<a href="/docs/navigation.html">Navigation</a>
+					<a href="/docs/tables.html">Tables</a>
+					<a href="/docs/tabs.html">Tabs</a>
+					<a href="/docs/tooltips.html">Tooltips</a>
+					<a href="/docs/typography.html">Typography</a>
+					<a href="/docs/utility.html">Utility</a>
 				</div>
 			</div>
-			<a href="">Blog</a>
-			<div class="nav-collapsible">
-				<input type="checkbox" id="nav-collapsible-2">
-				<label for="nav-collapsible-2">Store</label>
-				<div class="nav-collapsible-links">
-					<a href="">Accessories</a>
-					<a href="">Hats</a>
-					<a href="">Shoes</a>
-					<a href="">Shirts</a>
-				</div>
-			</div>
-			<a href="">Contact</a>
+			<a href="/about.html">About</a>
 		</nav>
 	</aside>
-	<main class="g--10 g-med--12 m--2 m-med--0 no-margin-vertical">
-		<header class="container--baseline">
-			<h1 class="m--1 g--4">Material Framework - CSS Only</h1>
-			<!-- <input type="checkbox" id="nav--horizontal-responsive">
-			<label for="nav--horizontal-responsive">MENU</label> -->
-			<nav class="g--3 nav--horizontal right">
-				<ul class="ul--dots">
-					<li><a href="http://www.google.com">Nav link</a></li>
-					<li><a href="http://www.google.com">Hello</a></li>
-					<li><a href="http://www.google.com">Contact</a></li>
-					<li class="dropdown"><a href="http://www.g.com">Dropdown</a>
-						<ul>
-							<li><a href="http://www.g.com">D Link</a></li>
-							<li><a href="http://www.g.com">D Link</a></li>
-							<li><a href="http://www.g.com">D Link</a></li>
-							<li><a href="http://www.g.com">D Link</a></li>
-						</ul>
-					</li>
-					<li><a href="http://www.google.com">Portfolio</a></li>
-				</ul>
-			</nav>
+	<main class="g--10 g-m--12 m--2 m-m--0 no-margin-vertical">
+		<header class="container--wrap">
+			<h1 class="m--1 g--4 g-s--12">Surface</h1>
 		</header>
-		<div class="g--12 container">
-			<div class="card g--3 m--1 fade-in-from-top inline-block">
-				<h2>Card!</h2>
-			</div>
-			<div class="tile g--3 m--1 fade-in-from-bottom anim-delay-15 inline-block">
-				<h2>Tile!</h2>
-			</div>
+		<div class="g--10 m--1">
+			<h2 class="fade-in-from-top color--pink">The framework you've been waiting for</h2>
 		</div>
-		<div class="alert-wrap g--2 m--1">
-			<input type="checkbox" id="alert-check">
-			<label for="alert-check">CLOSE</label>
-			<div class="alert card">
-				<p>Everyone hail spin pig</p>
+		<div class="g--10 m--1 container container--wrap--s">
+			<div class="g--4 g-s--12 fade-in-from-top card anim-delay--5">
+				<h3>Material Design</h3>
+				<p>Design philosophy and aesthetics inspired by <a href="http://www.google.co.uk/design/spec/material-design/introduction.html">Google's Material Design</a>.</p>
 			</div>
-		</div>
-		<div class="card g--8 g-med--6 g-small--10 m--1 m-med--2 m--0 tabs tab-demo-name">
-			<input type="radio" name="tabs" id="tab1" checked>
-		    <div class="tab-label-content" id="tab1-content">
-		      <label for="tab1">Tab 1</label>
-		      <div class="tab-content">TAB 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet eget lectus eu congue. Nam finibus urna eget nisl aliquam, in dictum ligula feugiat. Donec mollis ligula purus, et interdum velit bibendum eget. Aliquam magna diam, tristique eu libero nec, sagittis finibus sapien. Cras a ex ultricies, faucibus elit sagittis, maximus nisi. Donec quis arcu sapien.</div>
-		    </div>
-
-		    <input type="radio" name="tabs" id="tab2">
-		    <div class="tab-label-content" id="tab2-content">
-		      <label for="tab2">Tab 2</label>
-		      <div class="tab-content">TAB 2 - Quisque egestas, purus in tempor vulputate, diam augue mollis quam, quis elementum ipsum ex a risus. Quisque sed augue porta, facilisis felis vitae, cursus mi. Nullam mollis magna eget tincidunt mollis. Sed suscipit placerat ultricies. Sed eget lorem et ipsum ultricies congue eu a enim. Nam quis ex nec lorem dignissim suscipit eu ut felis. Vivamus molestie felis id purus congue, vel ultrices sem molestie.</div>
-		    </div>
-
-		    <input type="radio" name="tabs" id="tab3">
-		    <div class="tab-label-content" id="tab3-content">
-		      <label for="tab3">Tab 3</label>
-		      <div class="tab-content">TAB 3 - Quisque egestas, purus in tempor vulputate, diam augue mollis quam, quis elementum ipsum ex a risus. Quisque sed augue porta, facilisis felis vitae, cursus mi. Nullam mollis magna eget tincidunt mollis. Sed suscipit placerat ultricies. Sed eget lorem et ipsum ultricies congue eu a enim. Nam quis ex nec lorem dignissim suscipit eu ut felis. Vivamus molestie felis id purus congue, vel ultrices sem molestie.</div>
-		    </div>
-
-		    <div class="slide slide-demo"></div>
-		</div>
-		<div class="g--8 m--1">
-			<input type="checkbox" id="modal-1">
-			<label class="modal-trigger" for="modal-1">Modal Link</label>
-			<div class="modal-content g--4">
-				<p>Some modal content</p>
+			<div class="g--4 g-s--12 fade-in-from-top anim-delay--10 card nudge--left nudge--right no-nudge--s">
+				<h3>Super Lightweight</h3>
+				<p>One file. 5.7kb minified and Gzipped.</p>
+			</div>
+			<div class="g--4 g-s--12 fade-in-from-top anim-delay--15 card">
+				<h3>CSS Only</h3>
+				<p>100% CSS only. Absolutely zero Javascript.</p>
 			</div>
 		</div>
-		<div class="tile g--2 m--1">
-			<input type="checkbox" id="lightbox-1">
-			<label for="lightbox-1"><img src="http://i.imgur.com/7TDE8wi.jpg"></label>
+		<div class="g--10 m--1 fade-in-from-left anim-delay--20">
+			<h5>Browser Support</h5>
+			<p>Works back to IE10 and Safari 6.1. Will work on the majority of Firefox, Chrome and Opera builds.</p>
 		</div>
-		<div class="tile g--8 m--1">
-			<h4>Form Elements</h4>
-			<form>
-				<label>Username</label>
-				<input type="text" required placeholder="Username">
-				<label>Password</label>
-				<input type="password" required placeholder="Password">
-				<input type="checkbox">
-				<input type="radio" name="radio">
-				<input type="radio" name="radio">
-				<input type="radio" name="radio">
-				<select>
-					<option>Option 1</option>
-					<option>Option 2</option>
-					<option>Option 3</option>
-					<option>Option 4</option>
-				</select>
-				<input type="range">
-				<input type="checkbox" class="toggle" id="toggle">
-				<label for="toggle"></label>
-			</form>
+		<div class="g--10 m--1 fade-in-from-left anim-delay--25">
+			<button class="btn--raised nudge--right">Download CSS</button>
+			<button class="btn--raised btn--primary">Download SCSS</button>
 		</div>
-		<div class="g--2 m--1 ">
-			<div class="collapsible-wrap card no-pad">
-				<input type="checkbox" id="collapsible-1">
-				<label for="collapsible-1">Collapsible 1</label>
-				<div class="collapsible-1-area">
-					<p>Some content Area 1</p>
-				</div>
-			</div>
-
-			<div class="collapsible-wrap card no-pad">
-				<input type="checkbox" id="collapsible-2">
-				<label for="collapsible-2">Collapsible 2</label>
-				<div class="collapsible-2-area">
-					<p>Some content Area 2</p>
-				</div>
-			</div>
-
-			<div class="collapsible-wrap card no-pad">
-				<input type="checkbox" id="collapsible-3">
-				<label for="collapsible-3">Collapsible 3</label>
-				<div class="collapsible-3-area">
-					<p>Some content Area 3</p>
-				</div>
-			</div>
-		</div>
-		<div class="container--baseline g--8 m--1">
-			<ul>
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
-				<li>Item 4</li>
-				<li>Item 5</li>
-			</ul>
-			<ol>
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
-				<li>Item 4</li>
-				<li>Item 5</li>
-			</ol>
-		</div>
-		<div class="g--6 m--2 card">
-			<h1>Hello Zoe</h1>
-		</div>
-		<div class="container g--8 m--1">
-			<div class="g--5">
-				<button class="btn--flat">Flat</button>
-				<button class="btn--float">+</button>
-				<button class="btn--raised">Raised</button>
-			</div>
-			<div class="g--5">
-				<p>Lorem ipsum <a href="http://www.google.com">some link</a></p>
-				<p>Lorem ipsum <span class="tooltip" data-text="Hello">tooltip</span></p>
-				<p>Lorem ipsum <span class="tooltip" data-text="Hello">really loooooooooooong tooltip</span></p>
-				<p><span class="tooltip" data-text="Hello">really loooooooooooong tooltip</span></p>
-			</div>
-			<div class="g--5">
-				<xmp>
-					<a>Some code</a>
-					.class {
-					  color: red;
-					}
-				</xmp>
-			</div>
-		</div>
-		<div class="g--5 m--1 tile">
-			<h1>Heading 1</h1>
-			<h2 class="subtitle">Heading 2</h2>
-			<h3>Heading 3</h3>
-			<h4>Heading 4</h4>
-			<h5>Heading 5</h5>
-			<h6>Heading 6</h6>
-			<p>Pellentesque luctus scelerisque odio at euismod. Integer purus massa, varius eget justo sed, ultricies ornare massa. Suspendisse commodo tortor maximus magna pulvinar, vel porta ligula placerat. Sed feugiat tortor quis nisl mattis, nec lobortis nisi faucibus. Pellentesque sed risus vel nisl molestie tincidunt. In suscipit quis nisl et iaculis. Ut sit amet sodales odio. Aenean pretium nec velit eget dictum. Aenean vestibulum magna quis nunc iaculis, ut accumsan nisl accumsan. Nunc ante metus, accumsan sed ornare porta, finibus ac odio. Integer eu tempus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam elementum, nulla a viverra tempor, lacus mauris auctor ex, quis pulvinar massa nulla id massa. Suspendisse convallis, ligula vitae auctor ultrices, lectus ex condimentum nisi, nec lobortis ipsum lectus et mauris. Phasellus ultricies mollis sapien, id elementum justo gravida non.</p>
-		</div>
-		<table class="g--8 m--1 card">
-			<tr class="table--header">
-				<td>Number</td>
-				<td>Name</td>
-				<td>Age</td>
-				<td>Job</td>
-			</tr>
-			<tr>
-				<td>521</td>
-				<td>Ben</td>
-				<td>23</td>
-				<td>Front End Dev</td>
-			</tr>
-			<tr>
-				<td>951</td>
-				<td>Zoe</td>
-				<td>21</td>
-				<td>Care Worker</td>
-			</tr>
-			<tr>
-				<td>444</td>
-				<td>Simon</td>
-				<td>45</td>
-				<td>Film Producer</td>
-			</tr>
-		</table>
-		<div class="g--2 m--1">
-			<img src="img/spinPig.jpg">
-		</div>
-		<footer>
-			<a href="http://www.google.com">Some footer link</a>
-		</footer>
 	</main>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-62569134-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </body>
+</hmtl>
