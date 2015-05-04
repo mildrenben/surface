@@ -1,5 +1,5 @@
-@import './_imports/_variables';
-@import './_imports/_colors';
+@import './_imports/_variables',
+        './_imports/_colors';
 
 .card {
 	box-shadow: $box-shadow-card;

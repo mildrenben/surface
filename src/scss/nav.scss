@@ -1,5 +1,5 @@
-@import './_imports/_variables';
-@import './_imports/_colors';
+@import './_imports/_variables',
+				'./_imports/_colors';
 
 .nav--horizontal {
 	display: flex;
@@ -27,7 +27,7 @@
 		float: left;
 		clear: left;
 	}
-	li { 
+	li {
 		&:first-child a {
 			margin-bottom: $space-small*0.7;
 		}
