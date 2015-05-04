@@ -56,6 +56,8 @@
 	margin-bottom: 0;
 	position: fixed;
 	height: 100%;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	background: $body-background;
 	z-index: 7;
 	overflow-Y: auto;
