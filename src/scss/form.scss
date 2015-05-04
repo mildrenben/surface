@@ -6,7 +6,7 @@ label {
 
 input {
 	&[type="email"], &[type="text"], 
-	&[type="password"], &[type="textarea"] {
+	&[type="password"] {
 	  margin-bottom: $space-big;
 	  width: 200px;
 	  display: block;
@@ -222,5 +222,14 @@ input[type=range]::-ms-thumb {
 		transition: all 0.3s ease;
 		will-change: background, margin-left;
 		box-shadow: $box-shadow-card;
+	}
+}
+
+textarea {
+	border: solid 1px $grey;
+	transition: border 0.3s $cubic;
+	&:focus {
+		border: solid 1px $primary;
+		outline: none;
 	}
 }

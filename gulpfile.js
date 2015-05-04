@@ -18,7 +18,7 @@ gulp.task('browser-sync', ['compile-scss'], function(){
 		server: './prod'
 	});
 
-	gulp.watch(src.scss, ['compile-scss']);
+	gulp.watch('./src/scss/**/*.scss', ['compile-scss']);
 	gulp.watch('./prod/**/*.html').on('change', reload);
 });
 
