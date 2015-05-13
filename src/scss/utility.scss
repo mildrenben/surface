@@ -1,3 +1,4 @@
+// Floats
 .right {
 	float: right;
 }
@@ -6,6 +7,11 @@
 	float: left;
 }
 
+.clear {
+	clear: both;
+}
+
+// Display
 .inline {
 	display: inline;
 }
@@ -18,10 +24,12 @@
 	display: block;
 }
 
-.clear {
-	clear: both;
+.fixed {
+	display: fixed;
 }
 
+
+// Margin and Padding
 .no-pad {
 	padding: 0;
 }
@@ -35,6 +43,7 @@
 	margin: 0;
 }
 
+// Center
 .center {
 	margin: 0 auto;
 }
