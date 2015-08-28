@@ -1,45 +1,45 @@
 @import './colors';
 
 // Type
-$serif: 'Gentium Book Basic', serif;
-$sans: Roboto, sans-serif;
-$font-small: 12px;
-$font-med: 16px;
-$font-big: 22px;
-$font-huge: 40px;
-$line-height: 130%;
+$serif: 'Gentium Book Basic', serif !default;
+$sans: Roboto, sans-serif !default;
+$font-small: 12px !default;
+$font-med: 16px !default;
+$font-big: 22px !default;
+$font-huge: 40px !default;
+$line-height: 130% !default;
 
 // Colors
-$primary: $turqoise;
-$secondary: lighten($turqoise, 10%);
-$accent: $yellow;
+$primary: $turqoise !default;
+$secondary: lighten($turqoise, 10%) !default;
+$accent: $yellow !default;
 
-$body-background: $paper;
+$body-background: $paper !default;
 
 // Grid
-$grid-columns: 12;
+$grid-columns: 12 !default;
 
 // Decorative
-$box-shadow-card: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.09);
-$box-shadow-float: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-$box-shadow-float-hover: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-$box-shadow-raised: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-$box-shadow-raised-hover: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+$box-shadow-card: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.09) !default;
+$box-shadow-float: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !default;
+$box-shadow-float-hover: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !default;
+$box-shadow-raised: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !default;
+$box-shadow-raised-hover: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !default;
 
-$cubic: cubic-bezier(.64,.09,.08,1);
+$cubic: cubic-bezier(.64,.09,.08,1) !default;
 
-$border-radius-small: 3px;
-$border-radius-med: 6px; 
-$border-radius-big: 10px; 
+$border-radius-small: 3px !default;
+$border-radius-med: 6px !default; 
+$border-radius-big: 10px !default; 
 
 // Spacing
-$space-big: 40px;
-$space-med: 20px;
-$space-small: 10px;
+$space-big: 40px !default;
+$space-med: 20px !default;
+$space-small: 10px !default;
 
 // Media Queries
-$media-med: 1200px;
-$media-small: 900px;
-$media-tiny: 520px;
+$media-med: 1200px !default;
+$media-small: 900px !default;
+$media-tiny: 520px !default;
 
 
