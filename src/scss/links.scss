@@ -1,6 +1,6 @@
 @import './_imports/_variables';
 
-a:not([class*="btn"]) {
+a:not([class^="btn"]) {
 	background: linear-gradient(to top, rgba($secondary, 0.8) 50%, rgba(255,255,255,0) 50%);
 	background-size: 100% 200%;
 	background-position: 0 10%;
@@ -17,6 +17,6 @@ a:not([class*="btn"]) {
 	}
 }
 
-a[class*="btn"] {
+a[class^="btn"] {
 	text-decoration: none;
 }

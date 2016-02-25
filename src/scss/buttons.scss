@@ -1,6 +1,6 @@
 @import './_imports/_variables';
 
-[class*="btn"] {
+[class^="btn"] {
 	transition: all 0.3s $cubic;
 	box-shadow: $box-shadow-float;
 	position: relative;
