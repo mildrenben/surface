@@ -1,3 +1,5 @@
 Material Design, CSS only framework.
 
-Check the documentation at [iamsurface.com](http://www.iamsurface.com).
+### The docs have recently moved over to github pages. The iamsurface.com link no longer works. [New docs](http://mildrenben.github.io/surface)
+
+Check the documentation [here](http://mildrenben.github.io/surface).
