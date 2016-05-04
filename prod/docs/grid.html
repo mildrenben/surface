@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="/img/favicon.png" type="image/png">
+	<link href="../css/surface_styles.css" rel="stylesheet">
+	<link href="../css/monokai_sublime.css" rel="stylesheet">
+	<script src="../js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<title>Surface - Material Design, CSS only framework</title>
+	<meta name="description" content="Surface - The Material Design, CSS only framework. Surface is super lightweight at only 5.7kb on one file.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<input type="checkbox" id="nav--super-vertical-responsive">
+	<label for="nav--super-vertical-responsive">MENU</label>
+	<aside class="nav--super-vertical g--2 g-m--3 g-s--6 g-t--12 no-margin-vertical">
+		<div class="g--12 logo-area no-margin-vertical">
+			<h4 class="color--pink no-margin-vertical">Surface</h5>
+		</div>
+		<nav class="g--12 no-margin-vertical">
+			<a href="/index.html">Home</a>
+			<a href="/getting-started.html">Getting Started</a>
+			<div class="nav-collapsible">
+				<input type="checkbox" id="nav-collapsible-1" checked>
+				<label for="nav-collapsible-1">Components</label>
+				<div class="nav-collapsible-links">
+					<a href="/docs/alerts.html">Alerts</a>
+					<a href="/docs/animations.html">Animations</a>
+					<a href="/docs/buttons.html">Buttons</a>
+					<a href="/docs/cards-tiles.html">Cards &amp; Tiles</a>
+					<a href="/docs/collapsibles.html">Collapsibles</a>
+					<a href="/docs/colors.html">Colors</a>
+					<a href="/docs/footer.html">Footer</a>
+					<a href="/docs/forms.html">Forms</a>
+					<a href="/docs/grid.html">Grid</a>
+					<a href="/docs/header.html">Header</a>
+					<a href="/docs/lightbox.html">Lightbox</a>
+					<a href="/docs/links.html">Links</a>
+					<a href="/docs/media.html">Media</a>
+					<a href="/docs/modals.html">Modals</a>
+					<a href="/docs/navigation.html">Navigation</a>
+					<a href="/docs/tables.html">Tables</a>
+					<a href="/docs/tabs.html">Tabs</a>
+					<a href="/docs/tooltips.html">Tooltips</a>
+					<a href="/docs/typography.html">Typography</a>
+					<a href="/docs/utility.html">Utility</a>
+				</div>
+			</div>
+			<a href="/about.html">About</a>
+		</nav>
+	</aside>
+	<main class="g--10 g-m--12 m--2 m-m--0 no-margin-vertical">
+		<header class="container">
+			<h1 class="m--1 g--4 g-s--12">Grid</h1>
+		</header>
+		<div class="g--10 m--1">
+			<p>The grid system is the basis of Surface layouts.</p>
+			<div class="card g--5 g-s--12">
+				I'm a g--5 and g-s--12
+			</div>
+			<div class="card g--1 g-m--12">
+				I'm a g--1 and g-m--12
+			</div>
+			<div class="card g--2 m--3 g-m--8 m-m--2">
+				I'm a g--2 with a m--3, and a g-m--8 with a m-m--2
+			</div>
+			<div class="card g--3 m--1">
+				I'm a g--3 with a m--1
+			</div>
+			<div class="container g--6 g-s--12">
+				<div class="g--5 g-s--12 tile">
+					We're in a container
+				</div>
+				<div class="g--5 g-s--12 tile">
+					We're in a container
+				</div>
+			</div>
+			<h2>Code</h2>
+			<h3>Grid</h3>
+			<p>The grid system by default is 12 columns wide. This can be changed in the _variables file by altering the $grid-columns variable.</p>
+			<p>To give an element a grid size, use the class .g-- suffixed by the size of the grid. For example, .g--5 g-s--12 will be 5/12ths wide.</p>
+			<p>To make your grid elements responsive, include the breakpoint classes listed below. The breakpoint sizes can be changed in the _variables file.</p>
+			<ul>
+				<li>.g-m--12 or .g-m--4 - Use the m- for medium size breakpoints, which is &lt;1200px by default.</li>
+				<li>.g-s--12 or .g-s--4 - Use the s- for small size breakpoints, which is &lt;900px by default.</li>
+				<li>.g-t--12 or .g-t--4 - Use the t- for tiny size breakpoints, which is &lt;520px by default.</li>
+			</ul>
+			<pre>
+				<code class="lang-html">
+&lt;div class=&quot;g--5 g-s--12&quot;&gt;
+  I&apos;m a g--5 g-s--12
+&lt;/div&gt;
+&lt;div class=&quot;g--1 g-m--4 g-t--12&quot;&gt;
+  I&apos;m a g--1 at regular size, g--4 at medium and g--12 at tiny size.
+&lt;/div&gt;
+				</code>
+			</pre>
+			<h3>Margins</h3>
+			<p>The margins work exactly the same as the grid system. Each m--1 is equal size to a g--1</p>
+			<p>To give an element a margin, use the class .m-- suffixed by the size of the margin. For example, .m--3 will push your element along a quart of the grid (assuming you have a 12 column grid).</p>
+			<p>To make your margins responsive, include the breakpoint classes listed below. The breakpoint sizes can be changed in the _variables file.</p>
+			<ul>
+				<li>.m-m--12 or .m-m--4 - Use the m- for medium size breakpoints, which is &lt;1200px by default.</li>
+				<li>.m-s--12 or .m-s--4 - Use the s- for small size breakpoints, which is &lt;900px by default.</li>
+				<li>.m-t--12 or .m-t--4 - Use the t- for tiny size breakpoints, which is &lt;520px by default.</li>
+				<li>All margins can be zero, ie .m-s--0.</li>
+			</ul>
+			<pre>
+				<code class="lang-html">
+&lt;div class=&quot;m--3&quot;&gt;
+  I have a 3 grid wide margin
+&lt;/div&gt;
+&lt;div class=&quot;m--1 m-s--5&quot;&gt;
+  I have a 1 grid wide margin at regular size and a m--5 at small size.
+&lt;/div&gt;
+				</code>
+			</pre>
+			<h3>Containers</h3>
+			<p>Containers are a way of display elements that are usually block level inline. A container has the display flex declaration. Such as displaying divs next to each other. It also gets rid of those pesky gaps between inline-blocks.</p>
+			<p>To add a container class simply use the .container class. The following suffixes will control where the elements align vertically.</p>
+			<ul>
+				<li>.container--baseline - This class aligns elements so that the text baselines align</li>
+				<li>.container--center - This class aligns elements centrally</li>
+				<li>.container--start - This class aligns elements at the top of the container</li>
+				<li>.container--end - This class aligns elements at the bottom of the container</li>
+				<li>.container--justify - This class aligns elements horizontally central</li>
+			</ul>
+			<pre>
+				<code class="lang-html">
+&lt;div class=&quot;container g--6&quot;&gt;
+  &lt;div class=&quot;g--5 g-s--12 tile&quot;&gt;
+    We&apos;re in a container
+  &lt;/div&gt;
+  &lt;div class=&quot;g--5 g-s--12 tile&quot;&gt;
+    We&apos;re in a container
+  &lt;/div&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+			<p>You can also apply flex-wrap: wrap to your containers at different breakpoints with the following classes.</p>
+			<ul>
+				<li>.container--wrap</li>
+				<li>.container--wrap--m</li>
+				<li>.container--wrap--t</li>
+				<li>.container--wrap--s</li>
+			</ul>
+			<pre>
+				<code class="lang-html">
+&lt;div class=&quot;container container--wrap--t g--6&quot;&gt;
+  &lt;div class=&quot;g--5 g-s--12 tile&quot;&gt;
+    This container wraps at the tiny breakpoint
+  &lt;/div&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+			<h3>Nudges</h3>
+			<p>Sometimes 1 margin space is too big. That's what nudges are for. Use the .nudge--left and .nudge--right classes. These classes have a margin on their respective side that gets smaller as the screen width gets smaller. Particularly useful for buttons and smaller elements.</p>
+			<p>You can remove the nudges are small screen sizes using the following classes.</p>
+			<ul>
+				<li>.no-nudge--m</li>
+				<li>.no-nudge--s</li>
+				<li>.no-nudge--t</li>
+			</ul>
+			<pre>
+				<code class="lang-html">
+&lt;button class=&quot;btn--flat&quot;&gt;Flat&lt;/button&gt;
+&lt;button class=&quot;btn--float nudge--left nudge--right&quot;&gt;+&lt;/button&gt;
+&lt;button class=&quot;btn--raised&quot;&gt;Raised&lt;/button&gt;
+
+&lt;div class=&quot;card nudge--left nudge--right no-nudge--s&quot;&gt;
+I have a nudge left and right, but no nudge when smaller than the small breakpoint size.
+  &lt;p&gt;Words...&lt;/p&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+		</div>
+	</main>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-62569134-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</hmtl>
