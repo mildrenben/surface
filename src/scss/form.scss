@@ -6,7 +6,7 @@ label {
 
 input {
 	&[type="email"], &[type="text"], 
-	&[type="password"] {
+	&[type="password"], &[type="input"] {
 	  margin-bottom: $space-big;
 	  width: 200px;
 	  display: block;
