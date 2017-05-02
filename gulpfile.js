@@ -9,17 +9,17 @@ var gulp = require('gulp'),
 		scss: './src/scss/surface_styles.scss'
 	},
 
-	prod = {
-		css: './prod/css'
+	docs = {
+		css: './docs/css'
 	};
 
 gulp.task('browser-sync', ['compile-scss'], function(){
 	browserSync.init({
-		server: './prod'
+		server: './docs'
 	});
 
 	gulp.watch('./src/scss/**/*.scss', ['compile-scss']);
-	gulp.watch('./prod/**/*.html').on('change', reload);
+	gulp.watch('./docs/**/*.html').on('change', reload);
 });
 
 gulp.task('compile-scss', function(){
@@ -31,7 +31,7 @@ gulp.task('compile-scss', function(){
 		browsers: ['last 2 versions']
 	}))
 	.pipe(minifyCss())
-	.pipe(gulp.dest(prod.css))
+	.pipe(gulp.dest(docs.css))
 	.pipe(reload({
 		stream: true
 	}));
