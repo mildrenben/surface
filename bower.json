@@ -1,0 +1,25 @@
+{
+  "name": "surface",
+  "description": "Material Design, CSS only framework.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Ben Mildren"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "material",
+    "design",
+    "material",
+    "design",
+    "css",
+    "framework"
+  ],
+  "homepage": "https://github.com/mildrenben/surface",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

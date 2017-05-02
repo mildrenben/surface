@@ -58,7 +58,7 @@
 	height: 100%;
 	-webkit-transform: translateZ(0);
 	-webkit-backface-visibility: hidden;
-	background: $body-background;
+	background: white;
 	z-index: 7;
 	overflow-Y: auto;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -130,7 +130,7 @@
 		top: 0;
 		left: 0;
 		padding: $space-small;
-		background: $body-background;
+		background: white;
 		box-shadow: $box-shadow-card;
 		cursor: pointer;
 		transition: background 0.3s $cubic, color 0.3s $cubic;
@@ -165,7 +165,7 @@
 		}
 		> ul {
 			padding-top: 50px;
-			background: $body-background;
+			background: white;
 			box-shadow: $box-shadow-card;
 		}
 	}
@@ -176,7 +176,7 @@
 		top: 0;
 		left: 0;
 		padding: $space-small;
-		background: $body-background;
+		background: white;
 		box-shadow: $box-shadow-card;
 		cursor: pointer;
 		transition: background 0.3s $cubic, color 0.3s $cubic;
