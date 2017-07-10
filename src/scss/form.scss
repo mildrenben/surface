@@ -20,7 +20,7 @@ input {
 	  background-size: 200px 100%;
 	  background-repeat: no-repeat;
 	  color: darken($primary, 20%);
-	  &:focus, &:valid {
+	  &:focus {
 	    box-shadow: none;
 	    outline: none;
 	    background-position: 0 0;
