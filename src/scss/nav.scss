@@ -87,8 +87,10 @@
 			  height: auto;
 			  transform: scaleY(1);
 			  a {
-			    height: 54px;
-			  }
+					height: auto;
+					padding-bottom: 15px;
+					padding-top: 15px;
+				}
 			}
 		}
 	}
