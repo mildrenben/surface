@@ -6,6 +6,7 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	ul, ol {
+		list-style: none;
 		margin-left: 0;
 	}
 	> ul, > li {
@@ -61,7 +62,7 @@
 	background: white;
 	z-index: 7;
 	overflow-Y: auto;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	a, label {
 		width: 100%;
 		display: block;
