@@ -11,7 +11,7 @@ input {
 	  width: 200px;
 	  display: block;
 	  border: none;
-	  padding: 10px 0;
+	  padding: 20px 0 10px 0;
 	  border-bottom: solid 1px $primary;
 	  will-change: background-position;
 	  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
