@@ -11,11 +11,11 @@
 		}
 		+ label {
 			&:before {
-				margin-top: 6px;
+				top: 23px;
 				transform: rotate(-45deg) translateX(1px);
 			}
 			&:after {
-				margin-top: 5px;
+				top: 22px;
 				transform: rotate(45deg) translate(4px, -3px);
 			}
 		}
@@ -41,13 +41,12 @@ label[for*="collapsible-"] { // Label
 		transition: all 0.3s ease;
 	}
 	&:before {
-		margin-top: 2px;
+		top: 19px;
 		transform: rotate(50deg);
 	}
 	&:after {
-		margin-top: 6px;
+		top: 23px;
 		transform: rotate(-50deg);
-		
 	}
 }
 
