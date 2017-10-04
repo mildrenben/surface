@@ -28,7 +28,7 @@ input {
 	      color: $primary;
 	      font-size: 11px;
 	      transform: translateY(-20px);
-	      visibility: visible !important;
+	      visibility: visible;
 	    }
 	  }
 	  &::-webkit-input-placeholder {
