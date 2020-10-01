@@ -1,5 +1,7 @@
 Material Design, CSS only framework.
 
+it shows material design demos which build only on CSS.
+
 Check the documentation [here](http://mildrenben.github.io/surface).
 
 ---
