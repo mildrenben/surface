@@ -1,6 +1,6 @@
-Material Design, CSS only framework.
+Material Design and CSS are only framework.
 
-Check the documentation [here](http://mildrenben.github.io/surface).
+Click [here] to check the documentation.(http://mildrenben.github.io/surface).
 
 ---
 
