@@ -1,6 +1,6 @@
 Material Design and CSS are only framework.
 
-Click [here] to check the documentation.(http://mildrenben.github.io/surface).
+Click [here](http://mildrenben.github.io/surface) to check the documentation.
 
 ---
 
